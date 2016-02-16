@@ -1,6 +1,5 @@
 var app = require('http').createServer(handler)
 var io = require('socket.io')(app);
-// var io = require('socket.io')(app, { resource: '/wt/socket.io' });
 var fs = require('fs');
 
 app.listen(8345);

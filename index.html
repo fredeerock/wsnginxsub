@@ -5,7 +5,6 @@
 	<script src="https://atlab.cct.lsu.edu/wt/socket.io/socket.io.js"></script>
 
 	<script>
-		// var socket = io('https://atlab.cct.lsu.edu/wt/');
 		var socket = io('https://atlab.cct.lsu.edu/', { path: '/wt/socket.io' });
 		socket.on('news', function (data) {
 		console.log(data);
