@@ -2,9 +2,11 @@
 <html>
 <head>
 	<title>wsTest</title>
-	<script src="https://atlab.cct.lsu.edu/wt/socket.io/socket.io.js"></script>
+	<!-- 1. Put subdirecotry wt here. Sometimes works without this. -->
+	<script src="/wt/socket.io/socket.io.js"></script>
 
 	<script>
+		//2. Put subdirecotry wt here too.
 		var socket = io('https://atlab.cct.lsu.edu/', { path: '/wt/socket.io' });
 		socket.on('news', function (data) {
 		console.log(data);
