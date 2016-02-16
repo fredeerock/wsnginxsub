@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wsTest</title>
+	<script src="https://atlab.cct.lsu.edu/wt/socket.io/socket.io.js"></script>
+
+	<script>
+		// var socket = io('https://atlab.cct.lsu.edu/wt/');
+		var socket = io('https://atlab.cct.lsu.edu/', { path: '/wt/socket.io' });
+		socket.on('news', function (data) {
+		console.log(data);
+		socket.emit('my other event', { my: 'data' });
+		});
+	</script> 
+</head>
+<body>
+hi!
+</body>
+</html>
+
